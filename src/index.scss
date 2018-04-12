@@ -1,0 +1,56 @@
+@import './sass_partials/colors';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial Bold', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 20px auto;
+}
+
+button {
+  margin: 10px auto;
+  padding: 8px;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 6px;
+  border: 2px solid $button_border;
+  cursor: pointer;
+  transition: all 150ms linear;
+
+  &:hover {
+    background: rgb(241, 248, 254);
+  }
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin: 10px auto;
+  width: 300px;
+  font-size: 16px;
+  display: block;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
